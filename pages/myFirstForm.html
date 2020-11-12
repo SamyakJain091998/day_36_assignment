@@ -65,7 +65,7 @@
         const textError = document.querySelector('.text-error');
         text.addEventListener('input', function () {
             let nameRegex = RegExp('^[A-Z]{1}[a-z]{2,}$');
-            if (nameRegex.test(text.value)) textError.textContent = "";
+            if (nameRegex.test(text.value)) textError.textContent = "Correct!";
             else textError.textContent = "Name is in wrong format!";
         });
 
@@ -73,7 +73,7 @@
         const pwdError = document.querySelector('.pwd-error');
         pwd.addEventListener('input', function () {
             let pwdRegex = RegExp('^(?=.*[A-Z])(?=.*\\d)(?=.*\\W)[a-zA-Z0-9\\@\\_\\-\\+\\#\\*]{8,}$');
-            if (pwdRegex.test(pwdText.value)) pwdError.textContent = "";
+            if (pwdRegex.test(pwdText.value)) pwdError.textContent = "Correct!";
             else pwdError.textContent = "password format invalid!";
         });
 
@@ -81,7 +81,7 @@
         const emailError = document.querySelector('.email-error');
         email.addEventListener('input', function () {
             let emailRegex = RegExp('^[a-z][0-9a-z_+-]*\\.?[0-9a-z_+-]+@\\w+(\\.[a-z]{2,}){1,2}$');
-            if (emailRegex.test(emailText.value)) emailError.textContent = "";
+            if (emailRegex.test(emailText.value)) emailError.textContent = "Correct!";
             else emailError.textContent = "Email format invalid!";
         });
 
@@ -89,7 +89,7 @@
         const telError = document.querySelector('.tel-error');
         tel.addEventListener('input', function () {
             let telRegex = RegExp('^[9][1][ ][1-9]{1}[0-9]{9}$');
-            if (telRegex.test(telText.value)) telError.textContent = "";
+            if (telRegex.test(telText.value)) telError.textContent = "Correct!";
             else telError.textContent = "telephone format invalid!";
         });
 
